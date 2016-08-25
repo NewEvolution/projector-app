@@ -1,0 +1,22 @@
+{
+  "name": "projector-app",
+  "description": "Server for internal distribution of NEC remote projection application",
+  "main": "server.js",
+  "authors": [
+    "Ryan Tanay <rtanay@gmail.com> (http://portfolio.ryantanay.com/)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "projector",
+    "remote"
+  ],
+  "homepage": "https://github.com/NewEvolution/projector-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
