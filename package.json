@@ -1,0 +1,24 @@
+{
+  "name": "projector-app",
+  "version": "1.0.0",
+  "description": "Server for internal distribution of NEC remote projection application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewEvolution/projector-app.git"
+  },
+  "keywords": [
+    "node",
+    "projector",
+    "remote"
+  ],
+  "author": "Ryan Tanay <rtanay@gmail.com> (http://portfolio.ryantanay.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NewEvolution/projector-app/issues"
+  },
+  "homepage": "https://github.com/NewEvolution/projector-app#readme"
+}
