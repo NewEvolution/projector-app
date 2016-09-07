@@ -13,8 +13,7 @@ app.use(require('node-sass-middleware')({
   prefix:'/styles',
   indentedSyntax: true,
   outputStyle: 'compressed',
-  sourceMap: true,
-  debug: true
+  sourceMap: true
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
