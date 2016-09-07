@@ -10,8 +10,10 @@ const path = require('path')
 app.use(require('node-sass-middleware')({
   src: path.join(__dirname, '/sass'),
   dest: path.join(__dirname, '/public/styles'),
+  prefix:'/styles',
   indentedsyntax: true,
-  sourcemap: true
+  sourcemap: true,
+  debug: true
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
