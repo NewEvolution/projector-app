@@ -1,2 +1,15 @@
-.test
-  color: red
+// $params
+@mixin box_shadow($params)
+  -webkit-box-shadow: $params
+  -moz-box-shadow:    $params
+  -o-box-shadow:      $params
+  box-shadow:         $params
+
+.content
+  background-color: #a6ded5
+  @include box_shadow((inset -5px -5px 5px 0 rgba(20, 20, 20, 0.4), inset 5px 5px 5px 0 rgba(255, 255, 255, 0.5), 8px 8px 5px rgba(20, 20, 20, 0.4)))
+  border-radius: 10px
+  padding: 1em
+  margin-top: 5vh
+  height: 90vh
+  color: #001310
