@@ -5,11 +5,27 @@
   -o-box-shadow:      $params
   box-shadow:         $params
 
+@mixin background_size($params)
+  -webkit-background-size: $params
+  -moz-background-size:    $params
+  -o-background-size:      $params
+  background-size:         $params
+
+body
+  background: no-repeat top center fixed url('../images/paver_bg.jpg') #555
+  @include background_size(cover)
+
 .content
-  background-color: #a6ded5
-  @include box_shadow((inset -5px -5px 5px 0 rgba(20, 20, 20, 0.4), inset 5px 5px 5px 0 rgba(255, 255, 255, 0.5), 8px 8px 5px rgba(20, 20, 20, 0.4)))
+  background-color: rgb(131, 139, 152)
+  @include box_shadow((inset -5px -5px 5px 0 rgba(20, 20, 20, 0.7), inset 5px 5px 5px 0 rgba(255, 255, 255, 0.3), 5px 5px 5px 6px rgba(20, 20, 20, 0.4)))
   border-radius: 10px
-  padding: 1em
-  margin-top: 5vh
-  height: 90vh
+  padding: 2em
+  margin-top: 8vh
   color: #001310
+
+.bsize
+  height: 20vh
+  margin-bottom: 2em
+
+.bsize ~ .bsize
+  margin-bottom: 0
