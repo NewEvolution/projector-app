@@ -1,7 +1,6 @@
 'use strict'
 
 const express = require('express');
-const favicon = require('serve-favicon'); // eslint-disable-line no-unused-vars
 const app = express();
 
 app.set('view engine', 'pug');
